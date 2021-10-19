@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var botao = document.getElementById("btn");	
+            var clicadoUm = function() {		
+                alert("Botão clicado - um");
+            };	
+            
+            var clicadoDois = function() {		
+                alert("Botão clicado - dois");
+            };	
+            
+            var clicadoTres = function() {		
+                alert("Botão clicado - tres");
+            };	
+            
+            botao.addEventListener("click", clicadoUm, false)
+            botao.removeEventListener("click",clicadoUm, false)
+            botao.addEventListener("click", clicadoDois, false)
+            botao.addEventListener("click", clicadoTres, false)
+        }
+        </script>
+
+</head>
+<body>
+    <button id="btn">Clique esse botão</button>
+
+    <!--<script type="text/javascript"> 
+    window.onload = function(){
+        var botao = document.getElementById("btn")
+        var clicadoUm = function(){
+            alert("Botão clicado - um")
+        }
+        var clicadoDois = function(){
+            alert("Botão clicado - dois")
+        }
+        var clicadoTres = function(){
+            alert("Botão clicado - tres")
+        }
+        botao.addEventListener("click", clicaUm, false)
+        botao.addEventListener("click", clicaDois, false)
+        botao.addEventListener("click", clicaTres, false)
+    }
+    </script>-->
+
+
+
+    
+
+
+</body>
+</html>
